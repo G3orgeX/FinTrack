@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>FinTrack</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <h1>FinTrack</h1>
+            <p>Controla tus finanzas</p>
+        </div>
+        <nav class="navbar" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="Ingresos.html">Ingresos</a></li>
+                <li><a href="Categorias.html">Categorias</a></li>
+                <li><a href="Balances.html">Balances</a></li>
+                <li><a href="AhorrosInv.html">Ahorros e Inversiones</a></li>
+                <li><a href="Reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="filtros">
+            <label for="mes">Mes</label>
+            <input type="month" id="mes" name="mes">
+
+            <label for="anio">Año</label>
+            <input type="number" id="anio" name="anio" min="2000" max="2100">
+            <button id="filtrar">Filtrar</button>
+        </section>
+
+        <section class="dashboard" aria-label="Resumen financiero">
+            <article class="dashboard-card">
+                <h2>Total consumido</h2>
+                <p class="kpi-value">$1.000.000</p>
+                <p class="kpi-meta">Porcentaje <span>50%</span></p>
+            </article>
+
+            <article class="dashboard-card">
+                <h2>Total ingresos</h2>
+                <p class="kpi-value">$100.000</p>
+                <p class="kpi-meta">Porcentaje <span>50%</span></p>
+            </article>
+
+            <article class="dashboard-card">
+                <h2>Total ahorros</h2>
+                <p class="kpi-value">$1.000.000</p>
+                <p class="kpi-meta">Porcentaje <span>50%</span></p>
+            </article>
+        </section>
+        <section class="chart-panel">
+            <canvas id="myChart" width="400" height="300" aria-label="Gráfica de ingresos y gastos"></canvas>
+        </section>
+    </main>
+
+</body>
+</html>
