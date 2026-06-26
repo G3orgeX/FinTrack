@@ -1,6 +1,6 @@
 # FinTrack
 
-FinTrack es una pequeña aplicación web para llevar un control básico de tus finanzas personales. El proyecto muestra un resumen mensual de ingresos, gastos y ahorros en una interfaz simple.
+FinTrack es una aplicación web para gestión de finanzas personales para llevar un control básico de tus finanzas personales. El proyecto muestra un resumen mensual de ingresos, gastos y ahorros en una interfaz simple.
 
 ## ¿Qué incluye?
 
@@ -15,7 +15,7 @@ FinTrack es una pequeña aplicación web para llevar un control básico de tus f
 - `css/styles.css` — estilos del sitio
 - `routes/` — páginas secundarias del proyecto
 
-## Cómo ver la web localmente
+## Uso Local 
 
 Puedes abrir el archivo `index.html` directamente en tu navegador.
 

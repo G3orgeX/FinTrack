@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>FinTrack | Categorías</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <h1>FinTrack</h1>
+            <p>Controla tus finanzas</p>
+        </div>
+        <nav class="navbar" aria-label="Navegación principal">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./Ingresos.html">Ingresos</a></li>
+                <li><a href="./Categorias.html" class="active">Categorias</a></li>
+                <li><a href="./Balances.html">Balances</a></li>
+                <li><a href="./AhorrosInv.html">Ahorros e Inversiones</a></li>
+                <li><a href="./Reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- <nav class="sub-navbar" aria-label="Navegación secundaria">
+            <ul>
+                <li><a href="./Categorias.html" class="active">Categorías</a></li>
+                <li><a href="./Subcategorias.html">Subcategorías</a></li>
+            </ul>
+        </nav> -->
+
+        <section class="panel">
+            <h2>Agregar categoría</h2>
+            <form id="formCategoria" class="form-panel">
+                <label for="categoriaNombre">Nombre de la categoría</label>
+                <input type="text" id="categoriaNombre" name="nombre" placeholder="Ej. Educación" required>
+                <label for="categoriaDescripcion">Descripción</label>
+                <input type="text" id="categoriaDescripcion" name="descripcion" placeholder="Ej
+. Gastos relacionados con la educación" required>
+                <label for="categoriaFactor">Factor</label>
+                <select id="categoriaFactor" name="factor" required>
+                    <option value="">Seleccione un factor</option>
+                    <option value="positivo">Positivo</option>
+                    <option value="negativo">Negativo</option>
+                </select>
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Categorías registradas</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>id</th>                        
+                        <th>Categoria</th>
+                        <th>Descripción</th>                        
+                        <th>Factor</th>                        
+                    </tr>                    
+                </thead>
+                <tbody id="categoriasList">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section class="panel">
+            <h2>Transacciones recientes</h2>
+            <ul id="transaccionesList" class="list-panel"></ul>
+        </section>
+    </main>
+
+    <script type="module"src="../js/Services/TransaccionService.js"></script>
+</body>
+</html>

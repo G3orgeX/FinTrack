@@ -61,11 +61,10 @@ function renderTransacciones() {
         });
         const tipo = transaccion.categoria.factor < 0 ? 'gasto' : 'ingreso';
 
-        li.classList.add(tipo);
         li.innerHTML = `${fecha} —
             <strong>${transaccion.descripcion}</strong> —
             ${transaccion.categoria.nombre} —
-            <span>$ ${importe}</span>
+            <span class="${tipo}">$ ${importe}</span>
         `;
         transaccionesList.appendChild(li);
     });
