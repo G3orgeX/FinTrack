@@ -189,8 +189,33 @@ canvas {
 .data-table th,
 .data-table td {
     text-align: left;
-    padding: 10px 0;
+    padding: 10px 8px;
     border-bottom: 1px solid var(--color-border-soft);
+}
+
+.actions-cell {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.actions-cell button,
+.secondary-button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.actions-cell .edit-btn {
+    background-color: #f59e0b;
+    color: var(--color-white);
+}
+
+.actions-cell .delete-btn,
+.secondary-button {
+    background-color: #dc2626;
+    color: var(--color-white);
 }
 
 .inline-list {

@@ -35,18 +35,19 @@
         <section class="panel">
             <h2>Agregar categoría</h2>
             <form id="formCategoria" class="form-panel">
+                <input type="hidden" id="categoriaId" name="id">
                 <label for="categoriaNombre">Nombre de la categoría</label>
                 <input type="text" id="categoriaNombre" name="nombre" placeholder="Ej. Educación" required>
                 <label for="categoriaDescripcion">Descripción</label>
-                <input type="text" id="categoriaDescripcion" name="descripcion" placeholder="Ej
-. Gastos relacionados con la educación" required>
+                <input type="text" id="categoriaDescripcion" name="descripcion" placeholder="Ej. Gastos relacionados con la educación" required>
                 <label for="categoriaFactor">Factor</label>
                 <select id="categoriaFactor" name="factor" required>
                     <option value="">Seleccione un factor</option>
                     <option value="positivo">Positivo</option>
                     <option value="negativo">Negativo</option>
                 </select>
-                <button type="submit">Agregar</button>
+                <button type="submit" id="submitCategoria">Agregar</button>
+                <button type="button" id="cancelarEdicion" class="secondary-button" hidden>Cancelar</button>
             </form>
         </section>
 
@@ -55,11 +56,12 @@
             <table class="data-table">
                 <thead>
                     <tr>
-                        <th>id</th>                        
+                        <th>id</th>
                         <th>Categoria</th>
-                        <th>Descripción</th>                        
-                        <th>Factor</th>                        
-                    </tr>                    
+                        <th>Descripción</th>
+                        <th>Factor</th>
+                        <th>Acciones</th>
+                    </tr>
                 </thead>
                 <tbody id="categoriasList">
                     
